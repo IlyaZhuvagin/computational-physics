@@ -19,6 +19,8 @@ print(res_1)
 print(finish - start)
 for i in range(p):
     A_inver[i][i] = 1 / A[i][i]
+start2 = timer()
 res_2 = inv(A + U @ C @ V)
+finish2 = timer()
 print(res_2)
-print(finish - start)
+print(finish2 - start2)
